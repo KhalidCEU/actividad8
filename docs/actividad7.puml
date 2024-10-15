@@ -1,0 +1,45 @@
+@startuml
+
+class Principal {
+    +main(String[] args)
+    +testMain()
+}
+
+class Localidad {
+    -String nombre
+    -int numeroDeHabitantes
+    +setNombre(String nombre)
+    +setNumeroDeHabitantes(int numeroDeHabitantes)
+    +getNombre() : String
+    +getNumeroDeHabitantes() : int
+    +toString() : String
+}
+
+class Municipio {
+    -ArrayList<Localidad> municipio
+    -String nombre
+    -int numeroDeHabitantes
+    +Municipio(String nombre)
+    +getNbHabitantesMunicipio() : int
+    +getNombre() : String
+    +addLocalidades(Localidad... localidades)
+    +toString() : String
+}
+
+class Provincia {
+    -ArrayList<Municipio> provincia
+    -String nombre
+    -int numeroDeHabitantes
+    +Provincia(String nombre)
+    +getNbHabitantesProvincia() : int
+    +addMunicipios(Municipio... municipios)
+    +toString() : String
+}
+
+Principal *-- Localidad
+Principal *-- Municipio
+Principal *-- Provincia
+Municipio *-- Localidad
+Provincia *-- Municipio
+
+@enduml
