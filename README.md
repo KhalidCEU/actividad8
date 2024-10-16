@@ -16,3 +16,11 @@ Para compilar y lanzar el programa, use el comando
 ```
 make ejecutar
 ```
+
+### Diagrama UML
+
+<br>
+
+<p align="center">
+  <img src="http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/khalidCEU/actividad7/refs/heads/main/docs/actividad7.puml" alt="Class Diagram" width=40%>
+</p>
