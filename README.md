@@ -34,7 +34,7 @@ El CLI se lanzará y leerá automaticamente los datos.
 
 ### Ejemplo
 
-Para ver un ejemplo de input / output , acceda a **[este fichero](docs/ejemplo_IO)**.
+Para ver un ejemplo de input / output , acceda a **[este fichero](docs/ejemplo_IO.md)**.
 
 ### Nota
 
