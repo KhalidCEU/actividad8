@@ -1,8 +1,10 @@
 package dominio;
 import java.util.ArrayList;
+import java.io.Serializable;;
 
 
-public class Municipio {
+public class Municipio implements Serializable {
+
     private ArrayList<Localidad> municipio;
     private String nombre;
     private int numeroDeHabitantes;
@@ -23,6 +25,15 @@ public class Municipio {
 
     public String getNombre() {
         return this.nombre;
+    }
+
+    public ArrayList<Localidad> getLocalidades() {
+        return this.municipio;
+    }
+
+    public void addLocalidad(Localidad localidad) {
+        municipio.add(localidad);
+        System.out.println("Localidad " + localidad.getNombre() + " añadida al municipio " + this.nombre);
     }
 
     public void addLocalidades(Localidad... localidades) {

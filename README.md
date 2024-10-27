@@ -1,26 +1,41 @@
-## Actividad 7 - Colecciones de Objetos
+## Actividad 8 - Interfaz de texto y serializacion
 
-> Nota: Para mostrar el funcionamiento de este programa, se ha realizado mas de lo que pide el ejercicio. En el fichero **Principal.java** se han creado varios objetos de cada tipo para probar los metodos principales y demostrar su funcionamiento global.
+Este programa es una versión de la [actividad 7](https://github.com/KhalidCEU/actividad7), pero en modo **CLI** / Interfaz de texto.
 
-- **Municipios**: Se han creado dos objetos de la clase **Municipio**
-- **Localidades**: Se han creado dos objetos de la clase **Localidad**
-- **Provincia**: Todos los municipios pertenecen a una misma **Provincia.**
-
-Se calcula y muestra el **número total de habitantes** de **cada municipio**, que es la **suma** de los **habitantes** de sus **localidades**.
-También se calcula y muestra el **número total de habitantes** de la **provincia**, que es la **suma** de los **habitantes de todos sus municipios**.
 
 ### Uso
 
-Para compilar y lanzar el programa, use el comando
+Primero compile el programa con el comando :
 
 ```
-make ejecutar
+make
 ```
 
-### Diagrama UML
+Lance el programa :
 
-<br>
+```
+./a.out
+```
 
-<p align="center">
-  <img src="http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/khalidCEU/actividad7/refs/heads/main/docs/actividad7.puml" alt="Class Diagram" width=40%>
-</p>
+El CLI se lanzará y leerá automaticamente los datos.
+
+### Comandos
+
+  ```add provincia``` : Para **añadir una provincia**.
+
+  ```add municipio``` : Para **añadir un municipio** y asociarla a una provincia
+
+  ```add localidad``` : Para **añadir una localidad**, su número de habitantes y asociarlo a un municipio
+
+  ```list```: para **listar todos los datos**.
+
+  ```exit```: para **salir** del CLI / programa.
+
+
+### Ejemplo
+
+Para ver un ejemplo de input / output , acceda a **[este fichero](docs/ejemplo_IO)**.
+
+### Nota
+
+Este programa no está hecho con el fin de uso en producción. Hay varias cosas mejorables como una gestion de errores mas estricta etc, se hizo simplemente como ejercicio para mostrar el funcionamiento básico de una interfaz de texto con sus comandos principales y el uso de persistencia de datos en Java.
